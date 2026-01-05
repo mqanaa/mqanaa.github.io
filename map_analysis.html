@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind power sentiment map analysis</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <header>
+        <div class="row">
+            <h2>Wind Power Sentiment Map Analysis</h2>
+        </div>
+    </header>
+    <main>
+        <section class="work" id="work">
+            <div class="row">
+                <h3>Analysis of geographical survey data</h3>
+                <p>
+                    This analysis uses data from an open map-based survey on the acceptability of wind power in Helsinki. 
+                    The respondees were asked to place on a map locations they found suitable or unsuitable for wind power construction, as well as sites that are of particular importance to their lives. 
+                    There were nearly 2500 responses in total.
+                </p>
+                <p>
+                    The first map shows an overview of all responses, with suitable locations for wind power marked in green and unsuitable locations in red.
+                    The point data has been analysed by creating a 500 m x 500 m hexagon grid over the map area and counting the number of suitable and unsuitable points within each hexagon.
+                    A suitability rating for each hexagon has been calculated based on the counts of suitable and unsuitable points.
+                    The colour of each hexagon indicates the overall sentiment towards wind power in that area, with greener hexagons indicating more suitability and redder hexagons indicating unsuitability.
+                </p>
+                <img src="images/Helsinki_wind_power_opinion.png" alt="Wind power sentiment map">
+
+                <p>
+                    The second and third maps analyse a subsection of the answers. The second map shows the answers of Töölö residents and the third map the answers of Vuosaari residents.
+                    In addition to the overall sentiment hexagons, these maps also show the locations marked as important by the residents of each area.
+                </p>
+
+                <img src="images/toolo_opinion2.png" alt="Wind power sentiment map - Töölö residents">
+                <img src="images/vuosaari_opinion2.png" alt="Wind power sentiment map - Vuosaari residents">
+                
+                <p>
+                    For both areas it is evident that there is some tendency towards not wanting wind power to be built near their own neighborhood. 
+                    In both maps there is a concentration of negative sentiment near or at the responders' home location. 
+                    Though it should be noted that both maps also depict small areas of positive sentiment towards wind power, 
+                    suggesting that residents are not completely intolerant to wind power construction on their own home turf.
+                </p>
+
+                <p>
+                    A similar sentiment is seen with important places. Particularly for Vuosaari residents, important places tend to coincide with negative sentiment towards 
+                    wind power. This is not quite so clear in the Töölö map, where important places tend to coincide with both negative and positive sentiment areas. 
+                    One could theorise that perhaps Töölö residents have a more lenient attitude towards seeing wind power turbines in their favorite costal areas.
+
+                </p>
+                <p>
+                    In all three maps the areas that are deemed most suitable for wind power are towards the outer edges of the city.
+                    Notably, a lot of these places are outside their home locations, many of them are on sea areas and on islands that have few or no residents. 
+                
+                </p>
+
+                <h3>Sources</h3>
+                <p>
+                    The data is based on a wind power survey for Helsinki, carried out in 2015.
+                    Details on the survey and the data can be found in the Helsinki region infoshare service: <a href="https://hri.fi/data/en_GB/dataset/helsingin-tuulivoimakysely-2015" target="_blank">Wind Power Survey for Helsinki 2015</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
